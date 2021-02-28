@@ -7,7 +7,7 @@ class Main {
  Scanner scan = double
  movieTimes (time);
  movieTimes (time);
- if (blue == 12:30, time == 6:30)
+ if (blue == 12.30, time == 6.30)
 
  System.out.println("Yay! Movies Starting. Grab your snacks & have a seat please");
    return true; 
