@@ -1,17 +1,28 @@
 import java.util.Scanner;
-
 class Main {
-  public static void main(String[] args) 
-	{System.out.println("Hello Welcome to Jared's Cinema What movie would you like to watch?");
+  public static void main(String[] args) {
 
- Scanner scan = double
- movieTimes (time);
- movieTimes (time);
- if (blue == 12.30, time == 6.30)
 
- System.out.println("Yay! Movies Starting. Grab your snacks & have a seat please");
-   return true; 
- else 
- System.out.println("Oh no! The Movie isn't available. Do you want to try another time?");
+  Scanner scan = new Scanner(System.in);
+  System.out.println("Hello and welcome to the Jareds Cinema. What is your name?");
+  String name = scan.next();
+
+  System.out.println("Welcome to the cinema " + name + " please answer the questions down below.");
+
+  System.out.println("The movies playing are 1 or 2, which one are you watching?");
+  int answer = scan.nextInt();
+ 
+ System.out.println("We will now check the reviews on the movie you chose.");
+
+ System.out.println("The review of the movie you chose is " + movieReview(answer) + "% positive.");
+  }
+
+static int movieReview(int review){
+    if (review <= 75) { 
+      return 75;
+    }else{
+      int other = 5; 
+      return 1 + movieReview(review / other); 
+    }
   }
 }
